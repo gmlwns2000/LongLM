@@ -55,7 +55,7 @@ def apply_grouped_rotary_pos_emb(q, k, cos, sin, position_ids, g_size_1=8, g_siz
 
 
 def self_extend_forward(
-    self,
+    self: LlamaAttention,
     hidden_states: torch.Tensor,
     attention_mask: Optional[torch.Tensor] = None,
     position_ids: Optional[torch.LongTensor] = None,
